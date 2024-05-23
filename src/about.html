@@ -1,31 +1,46 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guaba.guava</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body class="bg-gray-100">
+  </head>
+  <body class="bg-white">
     <header id="headerPlaceholder" class="sticky top-0"></header>
 
     <div class="container mx-auto mt-20 min-h-screen">
-        <!-- 網頁內容START -->
-        <h2 class="text-2xl font-bold mb-4">關於我們</h2>
-        <p>This is the main content of the page.</p>
-        <!-- 網頁內容END -->
+      <!-- 網頁內容START -->
+      <h2 class="text-2xl font-bold mb-4">關於我們</h2>
+
+      <div class="space-y-20">
+        <div class="flex space-x-4">
+          <div class="bg-gray-200 h-6 w-6"></div>
+          <p class="font-bold text-green-500">主打商品</p>
+        </div>
+
+        <div class="grid grid-cols-4 gap-4">
+          <div class="bg-gray-200 h-96 rounded-md"></div>
+          <div class="bg-gray-200 h-96 rounded-md"></div>
+        </div>
+      </div>
+      
+      <!-- 網頁內容END -->
     </div>
 
     <footer id="footerPlaceholder"></footer>
 
     <script>
-        // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
-        $(function(){
-            $("#headerPlaceholder").load("header.html");
-            $("#footerPlaceholder").load("footer.html");
-        });
+      // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
+      $(function () {
+        $("#headerPlaceholder").load("header.html");
+        $("#footerPlaceholder").load("footer.html");
+      });
     </script>
-</body>
+  </body>
 </html>
