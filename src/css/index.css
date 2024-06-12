@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+
+.home1-button {
+    background-color: #689606;
+    color: white;
+    width: 130px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+.lineborder {
+    border-left-width: 6px;
+}
+
+.lineC {
+    border-color: #689606;
+}
+
+
+
+.leading-tight {
+    line-height: 1.5;
+}
+
+.home1B{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.green-hr {
+    height: 2px;
+    border: none;
+    background: linear-gradient(to right, #BBDA6E, #689606, #BBDA6E); /* 將 #689606 定義為 50% 的位置 */
+    margin: 20px 0;
+}
+.home-3{
+    width: 50%;
+}
+.home-3-h2{
+    color: #689606;
+    margin-bottom: 3%;
+}
+
+.home-3-p{
+    color: #737373;
+}
