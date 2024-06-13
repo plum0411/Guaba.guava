@@ -1,43 +1,83 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/product.css">
 
-    <title>Guaba.guava</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
-  <body class="bg-white">
-    <header id="headerPlaceholder" class="sticky top-0"></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <div class="container mx-auto mt-20 min-h-screen">
-      <!-- 網頁內容START -->
+  <title>Guaba.guava</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
+<body class="bg-white">
+  <header id="headerPlaceholder" class="sticky top-0"></header>
 
-    
-   
-      <div class="more">
-        <h1 class="more-title">更多商品</div>
-
+  <div class="mx-auto min-h-screen">
+    <!-- 網頁內容START -->
+    <div class="flex w-full h-[920px] bg-black justify-center justify-items-center items-center">
+      <div class="w-7/12 flex-col justify-start items-center gap-5 flex text-center text-white">
+        <div class="text-8xl font-bold">關於我們</div>
+        <div class="w-full h-0.5 relative bg-white rounded-full"></div>
+        <div class="text-base w-1/2">
+          介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉</div>
       </div>
-      
-      <!-- 網頁內容END -->
     </div>
 
-    <footer id="footerPlaceholder"></footer>
+    <div class="w-full px-40 py-24 flex-col  gap-24 flex">
+      <div class="items-center gap-2 flex">
+        <img class="w-24 h-24" src="https://via.placeholder.com/100x100" />
+        <div class="justify-center items-end gap-5 flex">
+          <div class="text-center text-lime-600 text-3xl font-bold">主打商品</div>
+          <div class="text-center text-stone-400 text-xl font-normal">四種豐富口味提供挑選</div>
+        </div>
+      </div>
 
-    <script>
-        // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
-        $(function(){
-            $("#headerPlaceholder").load("header.html");
-            $("#footerPlaceholder").load("footer.html");
+      <div class="w-full h-[460px] flex flex-row justify-between items-start" id="productsContainer">
+        <!-- Products will be dynamically loaded here -->
+        <div class="grow shrink basis-0 flex-col justify-between items-center">
+          <img class="w-80 h-80" src="https://via.placeholder.com/320x320" />
+          <div class="flex-col justify-start items-center gap-3 flex">
+            <div class="text-black text-3xl font-bold">Loading...</div>
+            <div class="text-stone-500 text-lg font-normal">Loading...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <h1 class="">更多商品</h1>
+    </div>
+  </div>
+
+  <!-- 網頁內容END -->
+  </div>
+
+  <footer id="footerPlaceholder"></footer>
+  
+  <script>
+    $(function(){
+      $("#headerPlaceholder").load("header.html");
+      $("#footerPlaceholder").load("footer.html");
+  
+      // Load and render products
+      $.getJSON("json/products.json", function(products) {
+        var productsContainer = $("#productsContainer");
+        productsContainer.empty(); // Clear the placeholder content
+        products.forEach(function(product) {
+          var productComponent = `
+            <div class="h-full px-8 flex flex-col justify-between items-center">
+              <img class="w-80 h-80" src="${product.image}" />
+              <div class="flex flex-col items-center space-3 flex">
+                <div class="text-black text-3xl font-bold">${product.name}</div>
+                <div class="text-stone-500 text-lg font-normal">${product.description}</div>
+              </div>
+            </div>`;
+          productsContainer.append(productComponent);
         });
-    </script>
+      });
+    });
+  </script>
 </body>
+
 </html>

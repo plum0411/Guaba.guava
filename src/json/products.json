@@ -1,0 +1,22 @@
+[
+  {
+    "name": "原味",
+    "description": "清爽甘甜經典古早回憶",
+    "image": "https://via.placeholder.com/320x320"
+  },
+  {
+    "name": "百香果",
+    "description": "天然果香，自然清甜",
+    "image": "https://via.placeholder.com/320x320"
+  },
+  {
+    "name": "梅粉",
+    "description": "甘甜回味，調味好選擇",
+    "image": "https://via.placeholder.com/320x320"
+  },
+  {
+    "name": "檸檬",
+    "description": "酸爽過癮，舌尖記憶的酸甜",
+    "image": "https://via.placeholder.com/320x320"
+  }
+]
