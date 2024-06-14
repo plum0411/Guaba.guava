@@ -1,168 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Guaba.guava</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  <body class="bg-white">
-    <header id="headerPlaceholder" class="sticky top-0"></header>
+  <title>Guaba.guava</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
-    <div class="mx-auto min-h-screen">
-      <!-- 網頁內容START -->
-      <div
-        class="flex w-full h-[920px] bg-black justify-center justify-items-center items-center"
-      >
-        <div
-          class="w-7/12 flex-col justify-start items-center gap-5 flex text-center text-white"
-        >
-          <div class="text-6xl font-bold">產品一覽</div>
-          <div class="w-full h-0.5 relative bg-white rounded-full"></div>
-          <div class="text-base w-1/2">
-            介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉
-          </div>
+<body class="bg-white">
+  <header id="headerPlaceholder" class="sticky top-0 z-10"></header>
+
+  <div class="mx-auto min-h-screen">
+    <!-- 網頁內容START -->
+    <div class="flex w-full h-[920px] bg-black justify-center justify-items-center items-center">
+      <div class="w-7/12 flex-col justify-start items-center gap-5 flex text-center text-white">
+        <div class="text-6xl font-bold">產品一覽</div>
+        <div class="w-full h-0.5 relative bg-white rounded-full"></div>
+        <div class="text-base w-1/2">
+          介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉介紹巴拉巴拉
         </div>
       </div>
-
-      <div class="w-full px-40 py-24 flex flex-col gap-24">
-        <div class="items-center gap-2 flex">
-          <img
-            class="w-24 aspect-square rounded-lg"
-            src="https://via.placeholder.com/100x100"
-          />
-          <div class="justify-center items-end gap-5 flex">
-            <div class="text-center text-lime-600 text-3xl font-bold">
-              主打商品
-            </div>
-            <div class="text-center text-stone-400 text-xl font-normal">
-              四種豐富口味提供挑選
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="w-full h-[460px] flex flex-row justify-between items-start"
-          id="productsContainer"
-        >
-          <!-- Products will be dynamically loaded here -->
-          <div
-            class="grow shrink basis-0 flex-col justify-between items-center"
-          >
-            <img
-              class="w-96 aspect-square rounded-lg"
-              src="https://via.placeholder.com/320x320"
-            />
-            <div class="flex-col justify-start items-center gap-3 flex">
-              <div class="text-black text-3xl font-bold">Loading...</div>
-              <div class="text-stone-500 text-lg font-normal">Loading...</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-full flex justify-start items-center gap-12">
-        <div
-          class="grow shrink h-0.5 rounded-full bg-gradient-to-l from-lime-600 to-lime-100 opacity-45"
-        ></div>
-        <div class="text-center text-lime-600 text-4xl font-bold">更多商品</div>
-        <div
-          class="grow shrink h-0.5 rounded-full bg-gradient-to-r from-lime-600 to-lime-100 opacity-45"
-        ></div>
-      </div>
-
-      <div class="w-full px-40 py-24 flex flex-col gap-24">
-        <div class="items-center gap-2 flex">
-          <img
-            class="w-24 aspect-square rounded-lg"
-            src="https://via.placeholder.com/100x100"
-          />
-          <div class="justify-center items-end gap-5 flex">
-            <div class="text-center text-lime-600 text-3xl font-bold">
-              現萃鮮果汁
-            </div>
-          </div>
-        </div>
-        <div class="px-12 flex justify-between gap-20">
-          <img class="rounded-2xl" src="https://via.placeholder.com/879x589" />
-          <div class="flex-col justify-center items-start gap-6 inline-flex">
-            <div
-              class="text-center text-stone-700 text-3xl font-bold leading-10"
-            >
-              原味/檸檬/柳橙
-            </div>
-            <div class="text-center text-stone-400 text-2xl leading-loose">
-              500ml / 瓶
-            </div>
-            <div
-              class="w-full h-0.5 rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45"
-            ></div>
-            <div
-              class="self-stretch text-stone-500 text-2xl font-normal leading-10"
-            >
-              為了讓大家都能享受到新鮮美味的芭樂和美味果汁，我們提供宅配服務，將這些美味送到您的家門口。我們的果汁包括萃取自新鮮檸檬和芭樂的檸檬芭樂汁，以及柳橙和芭樂結合而成的柳橙芭樂汁，還有純正的原味芭樂汁。讓您在家中也能品嚐到大自然的美味滋味。
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-full px-40 py-24 flex flex-col gap-24">
-        <div class="items-center gap-2 flex">
-          <img
-            class="w-24 aspect-square rounded-lg"
-            src="https://via.placeholder.com/100x100"
-          />
-          <div class="justify-center items-end gap-5 flex">
-            <div class="text-center text-lime-600 text-3xl font-bold">
-              季節水果
-            </div>
-            <div class="text-center text-stone-400 text-xl font-normal">
-              新鮮現切
-            </div>
-          </div>
-        </div>
-        <div class="px-12 flex justify-between gap-20">
-          <div class="flex-col justify-center items-start gap-6 inline-flex">
-            <div
-              class="text-center text-stone-700 text-3xl font-bold leading-10"
-            >
-              西瓜/青木瓜/鳳梨/蜜餞番茄
-            </div>
-            <div class="text-center text-stone-400 text-2xl leading-loose">
-              依據季節所提供
-            </div>
-            <div
-              class="w-full h-0.5 rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45"
-            ></div>
-            <div
-              class="self-stretch text-stone-500 text-2xl font-normal leading-10"
-            >
-              我們不僅提供新鮮美味的芭樂，還會根據季節為您供應各種口味豐富的水果，我們都將精心挑選當季最優質的水果，以滿足您的味蕾需求。每一片水果都是大自然的恩賜，每一口水果都是對品質的承諾。讓我們的產品成為您生活中的一份子，為您帶來健康與美味。
-            </div>
-          </div>
-          <img class="rounded-2xl" src="https://via.placeholder.com/879x589" />
-        </div>
-      </div>
-
-      <!-- 網頁內容END -->
     </div>
 
-    <footer id="footerPlaceholder"></footer>
+    <div class="w-full px-40 py-24 flex flex-col gap-24">
+      <div class="items-center gap-2 flex">
+        <img class="w-24 aspect-square rounded-lg" src="https://via.placeholder.com/100x100" />
+        <div class="justify-center items-end gap-5 flex">
+          <div class="text-center text-lime-600 text-3xl font-bold">
+            主打商品
+          </div>
+          <div class="text-center text-stone-400 text-xl font-normal">
+            四種豐富口味提供挑選
+          </div>
+        </div>
+      </div>
 
-    <script>
-      $(function () {
-        $("#headerPlaceholder").load("header.html");
-        $("#footerPlaceholder").load("footer.html");
+      <div class="w-full h-[460px] flex flex-row justify-between items-start" id="productsContainer">
+        <!-- Products will be dynamically loaded here -->
+        <div class="grow shrink basis-0 flex-col justify-between items-center">
+          <img class="w-96 aspect-square rounded-lg" src="https://via.placeholder.com/320x320" />
+          <div class="flex-col justify-start items-center gap-3 flex">
+            <div class="text-black text-3xl font-bold">Loading...</div>
+            <div class="text-stone-500 text-lg font-normal">Loading...</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        // Load and render products
-        $.getJSON("json/products.json", function (products) {
-          var productsContainer = $("#productsContainer");
-          productsContainer.empty(); // Clear the placeholder content
-          products.forEach(function (product) {
-            var productComponent = `
+    <div class="w-full flex justify-start items-center gap-12">
+      <div class="grow shrink h-0.5 rounded-full bg-gradient-to-l from-lime-600 to-lime-100 opacity-45"></div>
+      <div class="text-center text-lime-600 text-4xl font-bold">更多商品</div>
+      <div class="grow shrink h-0.5 rounded-full bg-gradient-to-r from-lime-600 to-lime-100 opacity-45"></div>
+    </div>
+
+    <div class="w-full px-40 py-24 flex flex-col gap-24">
+      <div class="items-center gap-2 flex">
+        <img class="w-24 aspect-square rounded-lg" src="https://via.placeholder.com/100x100" />
+        <div class="justify-center items-end gap-5 flex">
+          <div class="text-center text-lime-600 text-3xl font-bold">
+            現萃鮮果汁
+          </div>
+        </div>
+      </div>
+      <div class="px-12 grid justify-between gap-20 grid-cols-5 items-center">
+        <div
+          class="rounded-2xl bg-[url('https://via.placeholder.com/300x200')] bg-cover bg-center aspect-[3/2] col-span-3 overflow-hidden">
+        </div>
+        <div class="flex-col justify-center items-start gap-6 inline-flex col-span-2">
+          <div class="text-center text-stone-700 text-3xl font-bold leading-10">
+            原味/檸檬/柳橙
+          </div>
+          <div class="text-center text-stone-400 text-2xl leading-loose">
+            500ml / 瓶
+          </div>
+          <div class="w-full h-0.5 rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45">
+          </div>
+          <div class="self-stretch text-stone-500 text-2xl font-normal leading-10">
+            為了讓大家都能享受到新鮮美味的芭樂和美味果汁，我們提供宅配服務，將這些美味送到您的家門口。我們的果汁包括萃取自新鮮檸檬和芭樂的檸檬芭樂汁，以及柳橙和芭樂結合而成的柳橙芭樂汁，還有純正的原味芭樂汁。讓您在家中也能品嚐到大自然的美味滋味。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full px-40 py-24 flex flex-col gap-20">
+      <div class="items-center gap-2 flex">
+        <img class="w-24 aspect-square rounded-lg" src="https://via.placeholder.com/100x100" />
+        <div class="justify-center items-end gap-5 flex">
+          <div class="text-center text-lime-600 text-3xl font-bold">
+            季節水果
+          </div>
+          <div class="text-center text-stone-400 text-xl font-normal">
+            新鮮現切
+          </div>
+        </div>
+      </div>
+      <div class="px-12 grid justify-between gap-20 grid-cols-5 items-center">
+        <div class="flex flex-col justify-center items-start gap-6 col-span-2">
+          <div class="text-center text-stone-700 text-3xl font-bold">
+            西瓜/青木瓜/鳳梨/蜜餞番茄
+          </div>
+          <div class="text-center text-stone-400 text-2xl">
+            依據季節所提供
+          </div>
+          <div class="w-full h-0.5 rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45">
+          </div>
+          <div class="text-stone-500 text-2xl">
+            我們不僅提供新鮮美味的芭樂，還會根據季節為您供應各種口味豐富的水果，我們都將精心挑選當季最優質的水果，以滿足您的味蕾需求。每一片水果都是大自然的恩賜，每一口水果都是對品質的承諾。讓我們的產品成為您生活中的一份子，為您帶來健康與美味。
+          </div>
+        </div>
+        <div
+          class="rounded-2xl bg-[url('https://via.placeholder.com/300x200')] bg-cover bg-center aspect-[3/2] col-span-3 overflow-hidden">
+        </div>
+      </div>
+    </div>
+    <div class="grid grid-cols-4">
+      <div
+        class="group w-full h-screen bg-[url('https://via.placeholder.com/300x500')] bg-cover bg-center">
+        <div
+          class="transition duration-500 pt-72 group-hover:opacity-100 opacity-0 w-full h-full bg-opacity-50 bg-black flex flex-col items-center justify-center gap-12">
+          <div class="flex w-1/3 h-1/3 p-3 rounded-full border-4 border-white justify-center items-center gap-1">
+            <div
+              class="group w-full h-full bg-[url('https://via.placeholder.com/96x96')] aspect-square bg-cover bg-center rounded-xl">
+            </div>
+          </div>
+          <div class="flex-col justify-start items-center gap-10 flex">
+            <div class="flex-col justify-start items-center gap-7 flex">
+              <div class="text-center text-white text-4xl font-bold">芒果青</div>
+              <div class="w-full h-1 bg-white rounded-full"></div>
+            </div>
+            <div class="w-72 h-60 text-center text-white text-xl font-normal">
+              芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青芒果青</div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-screen bg-[url('https://via.placeholder.com/300x500')] bg-cover bg-center"></div>
+      <div class="w-full h-screen bg-[url('https://via.placeholder.com/300x500')] bg-cover bg-center"></div>
+      <div class="w-full h-screen bg-[url('https://via.placeholder.com/300x500')] bg-cover bg-center"></div>
+    </div>
+    <!-- 網頁內容END -->
+  </div>
+
+  <footer id="footerPlaceholder"></footer>
+
+  <script>
+    $(function () {
+      $("#headerPlaceholder").load("header.html");
+      $("#footerPlaceholder").load("footer.html");
+
+      // Load and render products
+      $.getJSON("json/products.json", function (products) {
+        var productsContainer = $("#productsContainer");
+        productsContainer.empty(); // Clear the placeholder content
+        products.forEach(function (product) {
+          var productComponent = `
             <div class="h-full px-8 flex flex-col justify-between items-center">
               <img class="w-96 aspect-square rounded-lg" src="${product.image}" />
               <div class="flex flex-col items-center space-3 flex">
@@ -170,10 +163,11 @@
                 <div class="text-stone-500 text-lg font-normal">${product.description}</div>
               </div>
             </div>`;
-            productsContainer.append(productComponent);
-          });
+          productsContainer.append(productComponent);
         });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
