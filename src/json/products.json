@@ -1,22 +1,50 @@
-[
-  {
-    "name": "原味",
-    "description": "清爽甘甜經典古早回憶",
-    "image": "https://via.placeholder.com/320x320"
-  },
-  {
-    "name": "百香果",
-    "description": "天然果香，自然清甜",
-    "image": "https://via.placeholder.com/320x320"
-  },
-  {
-    "name": "梅粉",
-    "description": "甘甜回味，調味好選擇",
-    "image": "https://via.placeholder.com/320x320"
-  },
-  {
-    "name": "檸檬",
-    "description": "酸爽過癮，舌尖記憶的酸甜",
-    "image": "https://via.placeholder.com/320x320"
-  }
-]
+{
+  "flavors": [
+    {
+      "name": "原味",
+      "description": "清爽甘甜經典古早回憶",
+      "image": "./img/Product/liquorice.png"
+    },
+    {
+      "name": "百香果",
+      "description": "天然果香，自然清甜",
+      "image": "./img/Product/passion_fruit.png"
+    },
+    {
+      "name": "梅粉",
+      "description": "甘甜回味，調味好選擇",
+      "image": "./img/Product/plum.png"
+    },
+    {
+      "name": "檸檬",
+      "description": "酸爽過癮，舌尖記憶的酸甜",
+      "image": "./img/Product/lemon.png"
+    }
+  ],
+  "fruits": [
+    {
+      "backgroundImage": "./img/Product/mango.png",
+      "iconImage": "./img/Product/mango_icon.png",
+      "title": "芒果青",
+      "description": "芒果青是夏季的珍寶，以其酸甜適中的口感著稱。一口接一口根本停不下來！試試我們的芒果青，讓你感受到滿滿的陽光和熱情。"
+    },
+    {
+      "backgroundImage": "./img/Product/pineapple.png",
+      "iconImage": "./img/Product/pineapple_icon.png",
+      "title": "鳳梨",
+      "description": "鳳梨具有獨特的甜酸口感，讓人難以抗拒。其多汁的果肉和清新的香氣使其成為消暑的理想選擇。"
+    },
+    {
+      "backgroundImage": "./img/Product/tomato.png",
+      "iconImage": "./img/Product/tomato_icon.png",
+      "title": "番茄蜜餞",
+      "description": "番茄蜜餞是兼具甜美與健康的美味小吃。其酸甜適中的口感和濃郁的果香，讓人回味無窮，一盒根本就不夠吃！"
+    },
+    {
+      "backgroundImage": "./img/Product/watermelon.png",
+      "iconImage": "./img/Product/watermelon_icon.png",
+      "title": "西瓜",
+      "description": "西瓜是夏日的最代表性的水果，其多汁的果肉和清爽的口感，能瞬間為帶來清涼感受，是夏日消暑的不二選擇！"
+    }
+  ]
+}
