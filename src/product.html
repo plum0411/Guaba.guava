@@ -22,7 +22,8 @@
           <div class="text-6xl font-bold">產品一覽</div>
           <div class="w-full h-0.5 relative bg-white rounded-full"></div>
           <div class="text-base w-2/3">
-            歡迎來到 Guaba.guava 的產品一覽頁面！這裡不僅展示了我們的多款口味選擇，更讓你感受到每一口的美好和熱情。從清新的原味，到迷人的百香果，每一款產品都是對品質和風味的極致追求，絕對值得一試！
+            歡迎來到 Guaba.guava
+            的產品一覽頁面！這裡不僅展示了我們的多款口味選擇，更讓你感受到每一口的美好和熱情。從清新的原味，到迷人的百香果，每一款產品都是對品質和風味的極致追求，絕對值得一試！
           </div>
         </div>
       </div>
@@ -146,18 +147,15 @@
         </div>
       </div>
       <!-- Add fruits container -->
-      <div
-        id="fruitsContainer"
-        class="w-full grid grid-cols-4"
-      ></div>
+      <div id="fruitsContainer" class="w-full grid grid-cols-4"></div>
     </div>
 
     <footer id="footerPlaceholder"></footer>
 
     <script>
       $(document).ready(function () {
-        $("#headerPlaceholder").load("public/header.html");
-        $("#footerPlaceholder").load("public/footer.html");
+        $("#headerPlaceholder").load("header.html");
+        $("#footerPlaceholder").load("footer.html");
 
         // Load JSON data
         $.getJSON("json/products.json", function (data) {
