@@ -1,85 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Guaba.guava</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body class="bg-white">
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="bg-white">
     <header id="headerPlaceholder" class="sticky top-0"></header>
 
-    <div class="w-full mx-auto mt-20 min-h-screen ">
-        <!-- 網頁內容START -->
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-around rounded-lg p-6 mb-20">
-            <div class="md:w-2/1">
-                <img src="img/Home/home-2.png" alt="Fresh Naturally Products" class="rounded-lg">
-            </div>
-            <div class="container md:w-1/2 mt-6 md:mt-0 md:ml-6 text-center md:text-left">
-                <div class="flex flex-col items-center md:items-start ">
-                    <div class=" h-full mr-4  ml-20">
-                        <div class="lineborder lineC h-full">
-                            <h1 class="text-7xl font-bold text-gray-500 mb-4 pl-10 leading-tight">Fresh<br>Naturally</h1>
-                            <p class="text-3xl font-bold text-gray-500 mb-4 pl-10">新鮮水果×天然調味！</p>
-    
-                        </div>
-                     
-                        <div class=" home1B">
-                            <button class="text-white px-4 py-2 rounded-lg home1-button">查看商品</button>
-                        </div>
-                    </div>
-                   
-                </div>
-            </div>
+    <div class="mx-auto mt-20 min-h-screen w-full">
+      <!-- 網頁內容START -->
+      <div
+        class="container mx-auto mb-20 flex flex-col items-center justify-around rounded-lg p-6 md:flex-row"
+      >
+        <div class="md:w-2/1">
+          <img
+            src="img/Home/home-2.png"
+            alt="Fresh Naturally Products"
+            class="rounded-lg"
+          />
         </div>
+        <div
+          class="container mt-6 text-center md:ml-6 md:mt-0 md:w-1/2 md:text-left"
+        >
+          <div class="flex flex-col items-center md:items-start">
+            <div class="ml-20 mr-4 h-full">
+              <div class="lineborder lineC h-full">
+                <h1
+                  class="mb-4 pl-10 text-7xl font-bold leading-tight text-gray-500"
+                >
+                  Fresh<br />Naturally
+                </h1>
+                <p class="mb-4 pl-10 text-3xl font-bold text-gray-500">
+                  新鮮水果×天然調味！
+                </p>
+              </div>
 
-        
-        <hr class="green-hr w-full">
-        <div class="container mx-auto flex flex-col md:flex-row items-center justify-around rounded-lg p-6 mt-20 mb-20 ">
-            <div class="md:w-2/3">
-                <div class="flex flex-col items-center md:items-start ">
-                    <div class=" h-full ">
-                        <div >
-                            <h1 class="text-2xl font-bold text-gray-500 ">產地直送×招牌甘草芭樂×鮮打芭樂汁×當季水果</h1>
-                            <div class="mt-20 flex items-center " >
-                                <img src="img/logo_1.png" alt="LOGO" class="rounded-lg w">
-                                <div class=" pl-10 home-3 ">
-                                    <p class="text-2xl home-3-h2 font-bold">認識我們</p>
-                                    <p class="home-3-p  ">記得媽媽曾經說過，做這些工作不僅是為了賺錢，更是為了讓客人
-                                        能吃到最好的芭樂。每次切割芭樂的時候，她總是會特別叮囑我，
-                                        要仔細檢查每一顆，確保沒有瑕疵。篩選和分類的過程也一樣重要，
-                                        我們要根據芭樂的大小、顏色和成熟度來分門別類，這樣客人才能根
-                                        據自己的喜好選擇。</p>
-                                </div>
-
-                            </div>
-                        </div>
-                     
-                      
-                    </div>
-                   
-                </div>
+              <div class="home1B">
+                <button
+                  class="home1-button rounded-lg px-4 py-2 text-white hover:bg-lime-700"
+                >
+                  查看商品
+                </button>
+              </div>
             </div>
-            <div class=" md:w-3/2 mt-6  text-center ">
-                <img src="img/Home/home-3.png" alt="Fresh Naturally Products" class="rounded-lg ">
-
-            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- 網頁內容END -->
+      <hr class="green-hr w-full" />
+      <div
+        class="container mx-auto mb-20 mt-20 flex flex-col items-center justify-around rounded-lg p-6 md:flex-row"
+      >
+        <div class="md:w-2/3">
+          <div class="flex flex-col items-center md:items-start">
+            <div class="h-full">
+              <div>
+                <h1 class="text-2xl font-bold text-gray-500">
+                  產地直送×招牌甘草芭樂×鮮打芭樂汁×當季水果
+                </h1>
+                <div class="mt-20 flex items-center">
+                  <div class="w-1/3">
+                    <img src="img/logo_1.png" alt="LOGO" class="w rounded-lg" />
+                  </div>
+                  <div class="home-3 pl-10">
+                    <p class="home-3-h2 text-2xl font-bold">認識我們</p>
+                    <p class="home-3-p">
+                      記得媽媽曾經說過，做這些工作不僅是為了賺錢，更是為了讓客人
+                      能吃到最好的芭樂。每次切割芭樂的時候，她總是會特別叮囑我，
+                      要仔細檢查每一顆，確保沒有瑕疵。篩選和分類的過程也一樣重要，
+                      我們要根據芭樂的大小、顏色和成熟度來分門別類，這樣客人才能根
+                      據自己的喜好選擇。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-3/2 mt-6 text-center">
+          <img
+            src="img/Home/home-3.png"
+            alt="Fresh Naturally Products"
+            class="rounded-lg"
+          />
+        </div>
+      </div>
+
+      <!-- 網頁內容END -->
     </div>
 
     <footer id="footerPlaceholder"></footer>
 
     <script>
-        // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
-        $(function(){
-            $("#headerPlaceholder").load("header.html");
-            $("#footerPlaceholder").load("footer.html");
-        });
+      // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
+      $(function () {
+        $("#headerPlaceholder").load("header.html");
+        $("#footerPlaceholder").load("footer.html");
+      });
     </script>
-</body>
+  </body>
 </html>
