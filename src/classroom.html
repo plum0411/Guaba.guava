@@ -5,17 +5,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="./css/classroom.css" />
     <title>Guaba.guava</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-white">
     <header id="headerPlaceholder" class="sticky top-0"></header>
 
     <div class="container mx-auto mt-20 min-h-screen">
         <!-- 網頁內容START -->
-        <h2 class="text-2xl font-bold mb-4">水果小學堂</h2>
-        <p>This is the main content of the page.</p>
+        <div class="content-wrapper">
+            <h2 class="text-2xl font-bold mb-4 text-center text-stone-600">水果小學堂</h2>
+            <h3 class="text-xl font-semibold mb-4 text-center text-stone-600">芭樂</h3>
+            <div class="text-center mx-auto text-stone-500 ">
+                <p>在台灣一開始種植芭樂並沒有套袋的習慣，但是芭樂很容易受到蟲害，<br>導致芭樂容易生病、長得很小顆而且產量少。<br>那麼芭樂套袋有什麼好處呢？</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 mx-auto">
+                <div class="text-center"> 
+                    <div class="mt-5">
+                        <img src="./img/classroom/1.jpg" alt="" class="w-540 h-400 object-cover rounded-[15px]"></div>
+                    <h4 class="text-lg font-semibold tracking-wide text-stone-600"><div class="mt-5">1. 防止果蠅叮咬及各種病蟲害</div></h4>
+                    <div class="mt-5">
+                        <p class="leading-relaxed text-stone-500 ">
+                            <p>我們喜歡吃芭樂，果蠅們也喜歡，為了避免果蠅叮咬，</p>
+                            <p>於是決定幫小芭樂穿上保麗龍大衣，就可以減少了病蟲</p>
+                            <p>散佈的可能。</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="mt-5"><img src="./img/classroom/2.jpg" alt="" class="w-full h-auto rounded-[15px]"></div>
+                    <h4 class="text-lg  text-stone-600 font-semibold tracking-wide "><div class="mt-5">2. 可以減少農藥使用</div></h4>
+                    <div class="mt-5">
+                        <p class="leading-relaxed text-stone-500">
+                            <p>小芭樂有保麗龍大衣的保護，減少病蟲害的危害，</p>
+                            <p>也就可以減少農藥的使用量，也防止農藥附著在芭</p>
+                            <p>樂上，大幅降低農藥的殘留。</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="mt-5"><img src="./img/classroom/3.jpg" alt="" class="w-full h-auto rounded-[15px]"></div>
+                    <h4 class="text-lg font-semibold tracking-wide text-stone-600 "><div class="mt-5">3. 避免芭樂曬傷</div></h4>
+                    <div class="mt-5">
+                        <p class="leading-relaxed text-stone-500 ">
+                            <p>芭樂成長過程很需要陽光，才會長的頭好壯壯，</p>
+                            <p>但為了不讓芭樂跟闆娘一樣曬到脫皮，防護罩還</p>
+                            <p>是必須穿的吧！</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mx-auto w-full">
+                <div class="flex-1 text-center">
+                    <h4 class="text-lg font-semibold tracking-wide text-stone-600 "><div class="mt-10">4. 保留露水，幫助芭樂成長</div></h4>
+                    <div class="mt-5">
+                        <p class="leading-relaxed text-stone-500 ">
+                            <p>芭樂跟美女一樣，需要早晨的露水來滋潤，</p>
+                            <p>袋子可以保存露水讓芭樂跟闆娘一樣水噹噹XD。</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 text-center md:text-center">
+                    <h4 class="text-lg font-semibold tracking-wide text-stone-600 "><div class="mt-10">5. 防止刮碰傷</div></h4>
+                    <div class="mt-5">
+                        <p class="leading-relaxed text-stone-500 ">
+                            <p>芭樂生長在樹上，難免會有天外飛來橫禍刮傷，</p>
+                            <p>或是採收過程中的碰撞。袋子可以減少小芭樂受</p>
+                            <p>到傷害，不定期更新水果小百科讓大家吃水果也</p>
+                            <p>能長知識。</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="white-area">
+                <h2 class="text-center text-xl font-semibold"></h2>
+                <p class="text-center"></p>
+            </div>
+            
+            <div class="full-width-section">
+                <div class="full-width-section">
+                    <div class="inner-section">
+                        <div class="content-wrapper">
+                            <div class="mt-5">
+                                <h3 class="text-2xl font-semibold mb-2 text-center text-stone-600 ">情人果</h3>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4 mx-auto items-center pt-10 pb-10">
+                                <div class="text-center md:w-2/1 mx-auto">
+                                    <div class="mt-5">
+                                        <div class="mt-5">
+                                            <h4 class="text-lg font-semibold tracking-wide text-stone-600 ">為什麼青芒果又叫情人果？</h4>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p class="leading-relaxed no-wrap text-stone-500 ">印度人用芒果來供奉最崇拜的愛神，當地傳說芒果會帶給戀人幸福，<br>
+                                            所以在每年春夏芒果花開時，成雙成對的印度情人們都紛紛來芒果樹<br>
+                                            下談情說愛，也為芒果贏得了「愛情之果」或「情人果」的美名。</p>
+                                    </div>
+                                    <div class="mt-5">
+                                        <h4 class="text-lg font-semibold tracking-wide text-stone-600 ">為什麼有青芒果？</h4>
+                                    </div>
+                                    <div class="mt-5">
+                                        <p class="leading-relaxed no-wrap text-stone-500 ">一棵果樹適量的留下幾顆幼果，讓養分平均輸送到其他果子上，才能<br>
+                                            控制產量，產出又大又甜美的果實。所以要生產出優質甜美的「蔬果」<br>
+                                            ，通常是需要「蔬果」這個動作。</p>
+                                    </div>
+                                </div>
+                       
+                                <div class="text-center image-container md:w-3/5 mx-auto">
+                                    <img src="./img/classroom/4.jpg" alt="Green Mango" class="w-full h-auto rounded-[15px]">
+                                    <h4 class="text-lg font-semibold tracking-wide"></h4>
+                                    <p class="leading-relaxed"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- 網頁內容END -->
     </div>
 
