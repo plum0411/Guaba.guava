@@ -1,93 +1,90 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .full-width-section {
-    background: rgba(236, 247, 209, 0.47);
-    background-size: cover;
-    position: relative;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
-    box-sizing: border-box;
-    padding-bottom: 0;
+  background: rgba(236, 247, 209, 0.47);
+  background-size: cover;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding-bottom: 0;
 }
 
 .inner-section {
-    padding: 10px;
+  padding: 10px;
 }
 
 .content-wrapper {
-    max-width: 70%;
-    margin: auto;
-    box-sizing: border-box;
+  max-width: 70%;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .white-area {
-    background-color: transparent; /* 确保背景色为透明 */
-    width: 100%;
-    min-height: 100px;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  background-color: transparent; /* 确保背景色为透明 */
+  width: 100%;
+  min-height: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
 .no-wrap {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .image {
-    border-radius: 16px;
-    max-width: 100%;
-    height: auto;
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .right-align-container {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .right-align-text {
-    position: absolute;
-    right: 0;
-    transform: translateX(50%);
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
 }
 
-
-
 .content-wrapper {
-    max-width: 82%;
-    margin: auto;
+  max-width: 82%;
+  margin: auto;
 }
 
 .image {
-    border-radius: 16px;
+  border-radius: 16px;
 }
 
 .center-text {
-    text-align: center;
+  text-align: center;
 }
 
 .specific-style {
-    text-align: right;
-    margin-left: -100px;
+  text-align: right;
+  margin-left: -100px;
 }
-

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,79 +6,129 @@
     <link rel="stylesheet" href="css/contact.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact Form</title>
-    <script src="https://kit.fontawesome.com/6c144437dc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/6c144437dc.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body class="bg-[#F7F3E0]">
     <header id="headerPlaceholder" class="sticky top-0 z-10"></header>
-    
+
     <div class="min-h-screen">
-      <div class="w-full h-1000px bg-lime-300 bg-opacity-40 bg-[url('img/contact/bg.png')] bg-fixed flex flex-col text-center items-center justify-center gap-16">
+      <div
+        class="h-1000px flex w-full flex-col items-center justify-center gap-16 bg-lime-300 bg-opacity-40 bg-[url('img/contact/bg.png')] bg-fixed text-center"
+      >
         <img class="logo-1" src="img/logo.png" alt="Logo" />
         <div class="flex flex-col gap-5">
-          <h1 class="text-5xl font-bold font-size: 60px main-color">聯絡瓜芭</h1>
+          <h1 class="font-size: 60px main-color text-5xl font-bold">
+            聯絡瓜芭
+          </h1>
           <div class="text-xl text-stone-600">
             <p class="text-1">
               如果您有任何疑問或需要進一步了解我們的服務，請使用以下方式聯絡我們
             </p>
             <p class="text-2">
-              If you have any questions or need further information about our services, please contact us using the following methods.
+              If you have any questions or need further information about our
+              services, please contact us using the following methods.
             </p>
           </div>
         </div>
       </div>
       <div class="flex flex-col">
-        <div class="custom-div flex h-800px bg-white rounded-[60px] p-5 mx-20 -mt-40 grid grid-cols-5 gap-1 custom-margin ">
+        <div
+          class="custom-div h-800px custom-margin mx-20 -mt-40 flex grid grid-cols-5 gap-1 rounded-[60px] bg-white p-5"
+        >
           <div
-            class="w-full h-full p-20 bg-cover bg-center rounded-[50px] bg-[url('./img/contact/green_block.png')] col-span-2 bg-opacity-80 text-white"
+            class="col-span-2 h-full w-full rounded-[50px] bg-opacity-80 bg-[url('./img/contact/green_block.png')] bg-cover bg-center p-20 text-white"
             alt="Green Block"
           >
-            <p style="font-size: 48px; font-weight: bold;">聯絡資訊</p>
-            <p class="information-1" style="font-size: 32px; font-weight: medium;">Contact Information</p>
-            <i class="fa-solid fa-phone icon-1"></i><span class="phone-number">0921 142-158</span><br>
-            <i class="fa-solid fa-location-dot icon-2"></i><a href="https://maps.google.com/maps?q=404台中市北區北平路二段70號" class="address" target="_blank" rel="noopener noreferrer">404台中市北區北平路二段70號</a><br>
-            <i class="fa-solid fa-clock icon-3"></i><span class="time">週一 ~ 週五：11:00 ~ 21:00</span>
+            <p style="font-size: 48px; font-weight: bold">聯絡資訊</p>
+            <p
+              class="information-1"
+              style="font-size: 32px; font-weight: medium"
+            >
+              Contact Information
+            </p>
+            <i class="fa-solid fa-phone icon-1"></i
+            ><span class="phone-number">0921 142-158</span><br />
+            <i class="fa-solid fa-location-dot icon-2"></i
+            ><a
+              href="https://maps.google.com/maps?q=404台中市北區北平路二段70號"
+              class="address"
+              target="_blank"
+              rel="noopener noreferrer"
+              >404台中市北區北平路二段70號</a
+            ><br />
+            <i class="fa-solid fa-clock icon-3"></i
+            ><span class="time">週一 ~ 週五：11:00 ~ 21:00</span>
           </div>
-          <div class="col-span-3 px-20 my-auto">
+          <div class="col-span-3 my-auto px-20">
             <div class="form-container">
               <div class="form-wrapper">
                 <form>
                   <label for="name">姓名</label>
-                  <input type="name" id="name" name="name" placeholder="請輸入您的姓名">
+                  <input
+                    type="name"
+                    id="name"
+                    name="name"
+                    placeholder="請輸入您的姓名"
+                  />
                 </form>
               </div>
               <div class="form-wrapper-phone">
                 <form>
                   <label for="phone">電話號碼</label>
-                  <input type="phone-number" id="phone-number" name="phone-number" placeholder="+886" required>
+                  <input
+                    type="phone-number"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="+886"
+                    required
+                  />
                 </form>
               </div>
             </div>
             <form class="email-form">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="@gmail.com"
+                required
+              />
             </form>
             <form class="message-form">
               <label for="message">問題與意見</label>
-              <input type="message" id="message" name="message" placeholder="寫下您的想法..." required>
+              <input
+                type="message"
+                id="message"
+                name="message"
+                placeholder="寫下您的想法..."
+                required
+              />
             </form>
           </div>
         </div>
         <button
           name="Send"
-          class="bg-main-color opacity-70 hover:opacity-85 text-white text-3xl font-bold px-28 py-6 rounded-2xl mx-auto my-10 "\ onclick="window.location.href='./send.html';">
+          class="bg-main-color mx-auto my-10 rounded-2xl px-28 py-6 text-3xl font-bold text-white opacity-70 hover:opacity-85"
+          \
+          onclick="window.location.href='./send.html';"
+        >
           傳 送
         </button>
       </div>
     </div>
-    
+
     <footer id="footerPlaceholder"></footer>
 
     <script>
-        $(function(){
-            $("#headerPlaceholder").load("header.html");
-            $("#footerPlaceholder").load("footer.html");
-        });
+      $(function () {
+        $("#headerPlaceholder").load("header.html");
+        $("#footerPlaceholder").load("footer.html");
+      });
     </script>
-</body>
+  </body>
 </html>
