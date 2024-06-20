@@ -99,7 +99,6 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center bottom;
-  opacity: 0.2;
 }
 .image {
   border-radius: 16px;
