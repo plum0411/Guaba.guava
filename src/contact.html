@@ -1,16 +1,17 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/6c144437dc.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>contact</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://kit.fontawesome.com/6c144437dc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/contact.css" />
-</head>
-  <div class="h-screen">
+  </head>
+  <body class="bg-[#F7F3E0]">
+    <header id="headerPlaceholder" class="sticky top-0 z-10"></header>
+    <div class="h-screen">
       <div class="w-full h-1000px bg-lime-300 bg-opacity-40 bg-[url('img/contact/bg.png')] bg-fixed flex flex-col text-center items-center justify-center gap-16">
         <img class="logo-1" src="img/contact/logo.png" alt="Logo" />
         <div class="flex flex-col gap-5">
@@ -73,13 +74,4 @@
     </div>
     <footer id="footerPlaceholder"></footer>
   </body>
-
-    <script>
-        // 使用 jQuery 的 load 方法來引入外部文件並插入到對應的 placeholder 中
-        $(function(){
-            $("#headerPlaceholder").load("header.html");
-            $("#footerPlaceholder").load("footer.html");
-        });
-    </script>
-</body>
 </html>
