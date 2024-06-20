@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,102 +7,103 @@
     <title>Guaba.guava</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
+
   <body class="bg-white">
     <header id="headerPlaceholder" class="sticky top-0 z-10"></header>
 
     <div class="mx-auto min-h-screen">
       <!-- 網頁內容START -->
       <div
-        class="flex w-full h-screen bg-[url('./img/Product/guavas.png')] bg-cover bg-fixed justify-center justify-items-center items-center relative"
+        class="relative flex h-screen w-full items-center justify-center justify-items-center bg-[url('./img/Product/guavas.png')] bg-cover bg-fixed"
       >
         <div class="absolute inset-0 bg-black opacity-50"></div>
         <div
-          class="w-7/12 flex-col justify-start items-center gap-5 flex text-center text-white relative"
+          class="z-50 flex w-7/12 flex-col items-center justify-start gap-5 text-center text-white"
         >
           <div class="text-6xl font-bold">產品一覽</div>
-          <div class="w-full h-0.5 relative bg-white rounded-full"></div>
-          <div class="text-base w-2/3">
+          <div class="h-0.5 w-full rounded-full bg-white"></div>
+          <div class="w-2/3 text-base">
             歡迎來到 Guaba.guava
             的產品一覽頁面！這裡不僅展示了我們的多款口味選擇，更讓你感受到每一口的美好和熱情。從清新的原味，到迷人的百香果，每一款產品都是對品質和風味的極致追求，絕對值得一試！
           </div>
         </div>
       </div>
 
-      <div class="w-full px-40 py-24 flex flex-col gap-24">
-        <div class="items-center gap-2 flex">
+      <div class="flex w-full flex-col gap-24 px-40 py-24">
+        <div class="flex items-center gap-2">
           <div
-            class="w-24 aspect-square rounded-lg bg-[url('./img/Product/subtitle_guava.png')] bg-cover bg-center"
+            class="aspect-square w-24 rounded-lg bg-[url('./img/Product/subtitle_guava.png')] bg-cover bg-center"
           ></div>
-          <div class="justify-center items-end gap-5 flex">
-            <div class="text-center text-lime-600 text-3xl font-bold">
+          <div class="flex items-end justify-center gap-5">
+            <div class="text-center text-3xl font-bold text-lime-600">
               主打商品
             </div>
-            <div class="text-center text-stone-400 text-xl font-normal">
+            <div class="text-center text-xl font-normal text-stone-400">
               四種豐富口味提供挑選
             </div>
           </div>
         </div>
 
         <div
-          class="w-full h-[460px] flex flex-row justify-between items-start"
+          class="flex h-[460px] w-full flex-row items-start justify-between"
           id="flavorsContainer"
         >
           <!-- Flavors will be dynamically loaded here -->
           <div
-            class="grow shrink basis-0 flex-col justify-between items-center"
+            class="shrink grow basis-0 flex-col items-center justify-between"
           >
             <div
-              class="w-24 aspect-square rounded-lg bg-[url('./img/Product/subtitle_guava.png')] bg-cover bg-center"
+              class="aspect-square w-24 rounded-lg bg-[url('./img/Product/subtitle_guava.png')] bg-cover bg-center"
             ></div>
-            <div class="flex-col justify-start items-center gap-3 flex">
-              <div class="text-black text-3xl font-bold">Loading...</div>
-              <div class="text-stone-500 text-lg font-normal">Loading...</div>
+            <div class="flex flex-col items-center justify-start gap-3">
+              <div class="text-3xl font-bold text-black">Loading...</div>
+              <div class="text-lg font-normal text-stone-500">Loading...</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="w-full flex justify-start items-center gap-12">
+      <div class="flex w-full items-center justify-start gap-12">
         <div
-          class="grow shrink h-0.5 rounded-full bg-gradient-to-l from-lime-600 to-lime-100 opacity-45"
+          class="h-0.5 shrink grow rounded-full bg-gradient-to-l from-lime-600 to-lime-100 opacity-45"
         ></div>
-        <div class="text-center text-lime-600 text-4xl font-bold">更多商品</div>
+        <div class="text-center text-4xl font-bold text-lime-600">更多商品</div>
         <div
-          class="grow shrink h-0.5 rounded-full bg-gradient-to-r from-lime-600 to-lime-100 opacity-45"
+          class="h-0.5 shrink grow rounded-full bg-gradient-to-r from-lime-600 to-lime-100 opacity-45"
         ></div>
       </div>
 
-      <div class="w-full px-40 py-24 flex flex-col gap-24">
-        <div class="items-center gap-2 flex">
+      <div class="flex w-full flex-col gap-24 px-40 py-24">
+        <div class="flex items-center gap-2">
           <div
-            class="w-24 aspect-square rounded-lg bg-[url('./img/Product/subtitle_logo.png')] bg-cover bg-center"
+            class="aspect-square w-24 rounded-lg bg-[url('./img/Product/subtitle_logo.png')] bg-cover bg-center"
           ></div>
-          <div class="justify-center items-end gap-5 flex">
-            <div class="text-center text-lime-600 text-3xl font-bold">
+          <div class="flex items-end justify-center gap-5">
+            <div class="text-center text-3xl font-bold text-lime-600">
               現萃鮮果汁
             </div>
           </div>
         </div>
-        <div class="px-12 grid justify-between gap-20 grid-cols-5 items-center">
+        <div class="grid grid-cols-5 items-center justify-between gap-20 px-12">
           <div
-            class="rounded-2xl bg-[url('./img/Product/guava_juice.png')] bg-cover bg-center aspect-[3/2] col-span-3 overflow-hidden"
+            class="col-span-3 aspect-[3/2] overflow-hidden rounded-2xl bg-[url('./img/Product/guava_juice.png')] bg-cover bg-center"
           ></div>
           <div
-            class="flex-col justify-center items-start gap-6 inline-flex col-span-2"
+            class="col-span-2 inline-flex flex-col items-start justify-center gap-6"
           >
             <div
-              class="text-center text-stone-700 text-3xl font-bold leading-10"
+              class="text-center text-3xl font-bold leading-10 text-stone-700"
             >
               原味/檸檬/柳橙
             </div>
-            <div class="text-center text-stone-400 text-2xl leading-loose">
+            <div class="text-center text-2xl leading-loose text-stone-400">
               500ml / 瓶
             </div>
             <div
-              class="w-full h-0.5 rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45"
+              class="h-0.5 w-full rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45"
             ></div>
             <div
-              class="self-stretch text-stone-500 text-2xl font-normal leading-10"
+              class="self-stretch text-2xl font-normal leading-10 text-stone-500"
             >
               為了讓大家都能享受到新鮮美味的芭樂和美味果汁，我們提供宅配服務，將這些美味送到您的家門口。我們的果汁包括萃取自新鮮檸檬和芭樂的檸檬芭樂汁，以及柳橙和芭樂結合而成的柳橙芭樂汁，還有純正的原味芭樂汁。讓您在家中也能品嚐到大自然的美味滋味。
             </div>
@@ -110,44 +111,44 @@
         </div>
       </div>
 
-      <div class="w-full px-40 py-24 flex flex-col gap-20">
-        <div class="items-center gap-2 flex">
+      <div class="flex w-full flex-col gap-20 px-40 py-24">
+        <div class="flex items-center gap-2">
           <div
-            class="w-24 aspect-square rounded-lg bg-[url('./img/Product/subtitle_guava.png')] bg-cover bg-center"
+            class="aspect-square w-24 rounded-lg bg-[url('./img/Product/subtitle_guava.png')] bg-cover bg-center"
           ></div>
-          <div class="justify-center items-end gap-5 flex">
-            <div class="text-center text-lime-600 text-3xl font-bold">
+          <div class="flex items-end justify-center gap-5">
+            <div class="text-center text-3xl font-bold text-lime-600">
               季節水果
             </div>
-            <div class="text-center text-stone-400 text-xl font-normal">
+            <div class="text-center text-xl font-normal text-stone-400">
               新鮮現切
             </div>
           </div>
         </div>
-        <div class="px-12 grid justify-between gap-20 grid-cols-5 items-center">
+        <div class="grid grid-cols-5 items-center justify-between gap-20 px-12">
           <div
-            class="flex flex-col justify-center items-start gap-6 col-span-2"
+            class="col-span-2 flex flex-col items-start justify-center gap-6"
           >
-            <div class="text-center text-stone-700 text-3xl font-bold">
+            <div class="text-center text-3xl font-bold text-stone-700">
               西瓜/青木瓜/鳳梨/蜜餞番茄
             </div>
-            <div class="text-center text-stone-400 text-2xl">
+            <div class="text-center text-2xl text-stone-400">
               依據季節所提供
             </div>
             <div
-              class="w-full h-0.5 rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45"
+              class="h-0.5 w-full rounded-full bg-gradient-to-r from-lime-100 via-lime-600 to-lime-100 opacity-45"
             ></div>
-            <div class="text-stone-500 text-2xl">
+            <div class="text-2xl text-stone-500">
               我們不僅提供新鮮美味的芭樂，還會根據季節為您供應各種口味豐富的水果，我們都將精心挑選當季最優質的水果，以滿足您的味蕾需求。每一片水果都是大自然的恩賜，每一口水果都是對品質的承諾。讓我們的產品成為您生活中的一份子，為您帶來健康與美味。
             </div>
           </div>
           <div
-            class="rounded-2xl bg-[url('./img/Product/fruits.png')] bg-cover bg-center aspect-[3/2] col-span-3 overflow-hidden"
+            class="col-span-3 aspect-[3/2] overflow-hidden rounded-2xl bg-[url('./img/Product/fruits.png')] bg-cover bg-center"
           ></div>
         </div>
       </div>
       <!-- Add fruits container -->
-      <div id="fruitsContainer" class="w-full grid grid-cols-4"></div>
+      <div id="fruitsContainer" class="grid w-full grid-cols-4"></div>
     </div>
 
     <footer id="footerPlaceholder"></footer>
@@ -169,11 +170,11 @@
           // Add flavors to the container
           flavors.forEach(function (flavor) {
             var flavorComponent = `
-            <div class="w-full h-full px-8 flex flex-col justify-between items-center">
+            <div class="grid flex-col items-center justify-between w-full h-full px-8">
               <div class="w-full aspect-square rounded-lg bg-center bg-cover bg-[url('${flavor.image}')]"></div>
               <div class="flex flex-col items-center space-3">
-                <div class="text-black text-2xl font-bold">${flavor.name}</div>
-                <div class="text-stone-500 text-lg font-normal">${flavor.description}</div>
+                <div class="text-2xl font-bold text-black">${flavor.name}</div>
+                <div class="text-lg font-normal text-stone-500">${flavor.description}</div>
               </div>
             </div>`;
             flavorsContainer.append(flavorComponent);
@@ -184,32 +185,32 @@
             backgroundImage,
             iconImage,
             title,
-            description
+            description,
           ) {
             return `
             <div
               class="group w-full h-screen bg-[url('${backgroundImage}')] bg-cover bg-center"
             >
               <div
-                class="transition duration-500 group-hover:opacity-100 opacity-0 w-full h-full bg-opacity-50 bg-black grid grid-rows-4 items-center justify-center gap-12"
+                class="grid items-center justify-center w-full h-full grid-rows-4 gap-12 transition duration-500 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100"
               >
                 <div class="row-span-2 row-start-2 space-y-12">
                   <div
-                    class="flex w-32 p-3 mx-auto rounded-full border-4 border-white justify-center items-center gap-1"
+                    class="flex items-center justify-center w-32 gap-1 p-3 mx-auto border-4 border-white rounded-full"
                   >
                     <div
                       class="group w-full bg-[url('${iconImage}')] aspect-square bg-cover bg-center rounded-xl"
                     ></div>
                   </div>
-                  <div class="flex-col justify-start items-center gap-10 flex">
-                    <div class="w-full flex-col justify-start items-center gap-7 flex">
-                      <div class="text-center text-white text-4xl font-bold">
+                  <div class="flex flex-col items-center justify-start gap-10">
+                    <div class="flex flex-col items-center justify-start w-full gap-7">
+                      <div class="text-4xl font-bold text-center text-white">
                         ${title}
                       </div>
                       <div class="w-full h-1 bg-white rounded-full"></div>
                     </div>
                     <div
-                      class="w-72 h-60 text-center text-white text-xl font-normal"
+                      class="text-xl font-normal text-center text-white w-72 h-60"
                     >
                       ${description}
                     </div>
@@ -227,8 +228,8 @@
                 fruit.backgroundImage,
                 fruit.iconImage,
                 fruit.title,
-                fruit.description
-              )
+                fruit.description,
+              ),
             );
           });
         });
