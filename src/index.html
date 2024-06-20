@@ -4,21 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-
     <title>Guaba.guava</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/index.css" />
+    <!-- <style>
+      .parallax {
+        transform: translateZ(0);
+      }
+    </style> -->
   </head>
   <body class="bg-white">
     <header id="headerPlaceholder" class="sticky top-0"></header>
 
     <div class="mx-auto min-h-screen w-full">
       <!-- 網頁內容START -->
-      <img
-        src="img/Home/home-1.png"
-        alt="Fresh Naturally Products"
-        class="rounded-lg"
-      />
+      <div class="relative flex px-40 pb-48 pt-28">
+        <!-- <div class="flex flex-row">
+          <img
+            src="img/Home/home_text.png"
+            alt="Fresh Naturally Products"
+            class="w-1/2 h-auto rounded-lg"
+          />
+          <img
+            src="img/Home/home_guava.png"
+            alt="Fresh Naturally Products"
+            class="mx-auto rounded-lg"
+          />
+        </div> -->
+        <img
+          src="img/Home/home_img.png"
+          alt="Fresh Naturally Products"
+          class="relative z-10 mx-auto rounded-lg"
+        />
+        <img
+          src="img/Home/home_bg.png"
+          alt="Fresh Naturally Products"
+          class="parallax absolute left-0 right-0 top-0 mx-auto rounded-lg"
+          class="h-auto w-full"
+        />
+      </div>
       <div
         class="container mx-auto mb-20 flex flex-col items-center justify-around rounded-lg p-6 md:flex-row"
       >
@@ -44,7 +68,6 @@
                   新鮮水果×天然調味！
                 </p>
               </div>
-
               <div class="home1B">
                 <a href="./product.html">
                   <button
@@ -58,7 +81,6 @@
           </div>
         </div>
       </div>
-
       <hr class="green-hr w-full" />
       <div
         class="container mx-auto mb-20 mt-20 flex flex-col items-center justify-around rounded-lg p-6 md:flex-row"
@@ -77,10 +99,7 @@
                   <div class="home-3 pl-10">
                     <p class="home-3-h2 text-2xl font-bold">認識我們</p>
                     <p class="home-3-p">
-                      記得媽媽曾經說過，做這些工作不僅是為了賺錢，更是為了讓客人能吃到最好
-                      的芭樂。每次切割芭樂時，她總是特別叮囑我，要仔細檢查每一顆，確保沒有
-                      瑕疵。篩選和分類的過程也同樣重要，我們要根據芭樂的大小、顏色和成熟度
-                      來分門別類，這樣客人才能根據自己的喜好進行選擇。
+                      記得媽媽曾經說過，做這些工作不僅是為了賺錢，更是為了讓客人能吃到最好的芭樂。每次切割芭樂時，她總是特別叮囑我，要仔細檢查每一顆，確保沒有瑕疵。篩選和分類的過程也同樣重要，我們要根據芭樂的大小、顏色和成熟度來分門別類，這樣客人才能根據自己的喜好進行選擇。
                     </p>
                   </div>
                 </div>
@@ -96,7 +115,6 @@
           />
         </div>
       </div>
-
       <!-- 網頁內容END -->
     </div>
 
@@ -107,6 +125,15 @@
       $(function () {
         $("#headerPlaceholder").load("header.html");
         $("#footerPlaceholder").load("footer.html");
+      });
+
+      // 視差效果
+      $(window).on("scroll", function () {
+        var scrollTop = $(this).scrollTop();
+        $(".parallax").css(
+          "transform",
+          "translateY(" + scrollTop * 0.5 + "px)",
+        );
       });
     </script>
   </body>
