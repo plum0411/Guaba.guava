@@ -109,7 +109,7 @@ label {
   display: block;
 }
 
-input[type="text"] {
+input[type="name"] {
   border-bottom: 3px solid #78716C;
   background-color: transparent;
   padding-top: 12px;
@@ -123,12 +123,12 @@ input[type="text"] {
   border-color: #cbd5e0;
 }
 
-input[type="text"]:focus {
+input[type="name"]:focus {
   border-color: #92BA3E;
   outline: none; 
 }
 
-input[type="text"]::placeholder {
+input[type="name"]::placeholder {
   font-size: 24px;
   color: #A8A29E;
   font-weight: bold;
@@ -217,10 +217,18 @@ input[type="message"]::placeholder {
   display: flex;
   justify-content: flex-start;
   gap: 80px;
+  max-width: 900px;
+  width: 100%;
+  box-sizing: inherit;
 }
 
 form {
   width: 100%;
   margin: 0 auto;
   padding: 20px 0; /
+}
+
+.custom-div * {
+  box-sizing: inherit;
+  max-width: 100%;
 }

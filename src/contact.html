@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://kit.fontawesome.com/6c144437dc.js" crossorigin="anonymous"></script>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/contact.css" />
+    <script src="https://kit.fontawesome.com/6c144437dc.js" crossorigin="anonymous"></script>
   </head>
   <body class="bg-[#F7F3E0]">
     <header id="headerPlaceholder" class="sticky top-0 z-10"></header>
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="flex flex-col">
-        <div class="bg-white rounded-[60px] p-5 mx-20 -mt-24 grid grid-cols-5 gap-1 custom-margin ">
+        <div class="custom-div flex h-800px bg-white rounded-[60px] p-5 mx-20 -mt-24 grid grid-cols-5 gap-1 custom-margin ">
           <div
             class="w-full h-full p-20 bg-cover bg-center rounded-[50px] bg-[url('./img/contact/green_block.png')] col-span-2 bg-opacity-80 text-white"
             alt="Green Block"
@@ -43,10 +43,10 @@
               <div class="form-wrapper">
                 <form>
                   <label for="name">姓名</label>
-                  <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
+                  <input type="name" id="name" name="name" placeholder="請輸入您的姓名">
                 </form>
               </div>
-              <div class="form-wrapper">
+              <div class="form-wrapper-phone">
                 <form>
                   <label for="phone">電話號碼</label>
                   <input type="phone-number" id="phone-number" name="phone-number" placeholder="+886" required>
@@ -66,8 +66,8 @@
         <button
           name="Send"
           style="letter-spacing: 0.5em; "
-          class="bg-main-color opacity-70 hover:opacity-85 text-white text-3xl font-bold px-28 py-6 rounded-2xl mx-auto my-10 "
-        >
+          class="bg-main-color opacity-70 hover:opacity-85 text-white text-3xl font-bold px-28 py-6 rounded-2xl mx-auto my-10 "\
+          onclick="window.location.href='http://127.0.0.1:5500/send.html';">
           傳送
         </button>
       </div>
